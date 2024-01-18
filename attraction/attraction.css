@@ -163,10 +163,14 @@ img {border: 0; vertical-align: top;}
 #header:hover .gnb>li>a{
     color:#222;
 }
-
-#header .gnb>li .sub>li>a{
+body,html{
     display: block;
-    cursor:url(img/redl_block.png)20 30,auto;
+    cursor:url(img/head_normal_block.png)-10 -20,auto;
+}
+
+#header .gnb>li a, #header .gnb>li .sub>li>a{
+    display: block;
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 
 #header .gnb>li:nth-child(1):hover,
@@ -225,7 +229,7 @@ img {border: 0; vertical-align: top;}
     position: absolute;
     top: 10px;
     left: 190px;
-    cursor: pointer;
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 
 #header .gnb {
@@ -235,11 +239,7 @@ img {border: 0; vertical-align: top;}
     top: 0px;
     left: 960px;
 }
-#header .logo>a {
-    display: block;
-    width: 219px;
-    height: 80px;
-}
+
 #header .gnb>li {
     float: left;
     width: 150px;
@@ -298,7 +298,9 @@ img {border: 0; vertical-align: top;}
     font-weight: 300;
     font-size: 20px;
     text-shadow: 0 0 5px rgb(115, 5, 9);
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
+
 
 /*section*/
 
@@ -386,7 +388,8 @@ img {border: 0; vertical-align: top;}
 }
 #section .attraction .att_tab>ul>li>a{
     color:#333;
-    cursor:url(img/yell_block.png)20 30,auto;
+    cursor:url(img/yell_block.png)-10 -20,auto;
+    display: block;
 }
 #section .attraction .att_tab>ul>li.on>a{color:#52b3fd;}
 #section .attraction .att_tab>ul>li.on:after{
@@ -529,7 +532,9 @@ img {border: 0; vertical-align: top;}
     background-image: url(img/lego137073.webp);
 }
 /* 커서 포인터 */
-#section .attraction .att_cont>div>div{cursor: pointer;}
+#section .attraction .att_cont>div>div{
+    cursor:url(img/yell_block.png)-10 -20,auto;
+}
 
 
 /*브릭토피아 모달*/
@@ -1573,7 +1578,7 @@ img {border: 0; vertical-align: top;}
     border-radius: 50%;
     color:white;
     background-color: #52b3fdb0;
-    cursor: pointer;
+    cursor:url(img/yell_block.png)-10 -20,auto;
     position:fixed;
     z-index: 9;
     bottom:50px;
@@ -1623,7 +1628,7 @@ img {border: 0; vertical-align: top;}
     font-size: 15px;
     color: rgb(123,123,123);
     line-height: 30px;
-    cursor: pointer;
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 #footer .linsafj .fotterTop>li .sns{
     margin-top:8px;
@@ -1716,3 +1721,21 @@ font-size: 13px;
 color: rgb(105,105,105);
 }
 
+.material-symbols-outlined{
+    animation-duration: 1s;
+    animation-name: footer ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes footer {
+    0% {
+    transform:scale(1.0);
+    }
+    50% {
+    transform: scale(1.3);
+    color: rgb(85, 85, 85);
+    }
+    100% {
+    transform: scale(1.0);
+    }
+}

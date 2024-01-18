@@ -57,7 +57,7 @@ $(document).ready(function(){
             const rect = $el[0].getBoundingClientRect();
             const winHeight = window.innerHeight;
             const contentHeight = rect.bottom - rect.top;
-            if (rect.top <= winHeight - (contentHeight * exposurePercentage / 200) && rect.bottom >= (contentHeight * exposurePercentage / 200)) {
+            if (rect.top <= winHeight - (contentHeight * exposurePercentage / 250) && rect.bottom >= (contentHeight * exposurePercentage / 250)) {
                 $el.addClass('active');
             }
         });

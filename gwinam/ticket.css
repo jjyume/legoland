@@ -293,6 +293,8 @@ body,html{
 }
 
 #header .reservation>a {
+    display: block;
+    width: 130px; height: 70px;
     color: #fff;
     text-align: center;
     line-height: 70px;

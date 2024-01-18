@@ -151,8 +151,6 @@ img {border: 0; vertical-align: top;}
 
 /*header*/
 
-/*header*/
-
 #header {
     width: 100%;
     height: 100px;
@@ -170,10 +168,14 @@ img {border: 0; vertical-align: top;}
 #header:hover .gnb>li>a{
     color:#222;
 }
-
-#header .gnb>li .sub>li>a{
+body,html{
     display: block;
-    cursor:url(img/redl_block.png)20 30,auto;
+    cursor:url(img/head_normal_block.png)-10 -20,auto;
+}
+
+#header .gnb>li a, #header .gnb>li .sub>li>a{
+    display: block;
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 
 #header .gnb>li:nth-child(1):hover,
@@ -232,7 +234,7 @@ img {border: 0; vertical-align: top;}
     position: absolute;
     top: 10px;
     left: 190px;
-    cursor: pointer;
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 
 #header .gnb {
@@ -241,12 +243,6 @@ img {border: 0; vertical-align: top;}
     position: absolute;
     top: 0px;
     left: 960px;
-}
-
-#header .logo>a {
-    display: block;
-    width: 219px;
-    height: 80px;
 }
 
 #header .gnb>li {
@@ -307,6 +303,7 @@ img {border: 0; vertical-align: top;}
     font-weight: 300;
     font-size: 20px;
     text-shadow: 0 0 5px rgb(115, 5, 9);
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 
 /*section*/
@@ -372,7 +369,7 @@ img {border: 0; vertical-align: top;}
     color:white;
     font-size:22px;
     font-weight:bold;
-    cursor: pointer;
+    cursor:url(img/yell_block.png)-10 -20,auto;
     font-family: 'Pretendard600';
 }
 #section .tab_menu>div.on{
@@ -632,7 +629,7 @@ img {border: 0; vertical-align: top;}
 }
 
 #section .con_3_1_left{
-    margin-top:100px;
+    margin-top:50px;
 }
 
 #section .con_3 .con_3_1{
@@ -662,7 +659,7 @@ img {border: 0; vertical-align: top;}
 
 
 #section .con_3 .con_3_2{
-    margin-top:200px;
+    margin-top:150px;
     margin-left:80px;
     /* background-color: pink; */
 }
@@ -689,29 +686,36 @@ img {border: 0; vertical-align: top;}
     float:left;
 }
 #section .con_3 .con_3_2 .time2_left{
-    margin-left:70px;
+    margin-left:40px;
 }
 #section .con_3 .con_3_2 .time1_left .time1,
 #section .con_3 .con_3_2 .time2_left .time2{
     float:left;
-    margin-top:55px;
-    margin-right:40px;
-    letter-spacing: -1px;
+    width: 240px;
+    background-color: #FAC800;
+    padding-top:45px;
+    padding-left:10px;
+    padding-right:10px;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
     font-size:15px;
+    text-align: center;
+    color: rgb(110, 110, 110);
     font-family: 'Pretendard400';
     line-height:28px;
-    /* height:900px; */
+    height:370px;
 }
 #section .con_3 .con_3_2 .time1_left .time1 span,
 #section .con_3 .con_3_2 .time2_left .time2 span{
     color:#2ca2fd;
-    font-size:17px;
+    font-size:16px;
     font-family: 'Pretendard600';
 }
 #section .con_3 .con_3_2 .time1_left img,
 #section .con_3 .con_3_2 .time2_left img{
     float:left;
     height:370px;
+    border-radius: 0 10px 10px 0;
 }
 
 #section .con_3 .con_3_2 .number{
@@ -787,7 +791,7 @@ img {border: 0; vertical-align: top;}
     font-size: 15px;
     color: rgb(123,123,123);
     line-height: 30px;
-    cursor: pointer;
+    cursor:url(img/yell_block.png)-10 -20,auto;
 }
 #footer .linsafj .fotterTop>li .sns{
     margin-top:8px;
@@ -890,4 +894,23 @@ margin-bottom: 10px;
 #footer .fotterBtm p.byebye{
 font-size: 13px;
 color: rgb(105,105,105);
+}
+
+.material-symbols-outlined{
+    animation-duration: 1s;
+    animation-name: footer ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes footer {
+    0% {
+    transform:scale(1.0);
+    }
+    50% {
+    transform: scale(1.3);
+    color: rgb(85, 85, 85);
+    }
+    100% {
+    transform: scale(1.0);
+    }
 }
