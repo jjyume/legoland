@@ -790,12 +790,12 @@ color: rgb(105,105,105);
 
 @keyframes object {
     0% {
-    transform: rotate(-10deg);
+    transform: rotate(0deg);
     }
     50% {
-    transform: rotate(13deg);
+    transform: rotate(7deg);
     }
     100% {
-    transform: rotate(-10deg);
+    transform: rotate(0deg);
     }
 }
