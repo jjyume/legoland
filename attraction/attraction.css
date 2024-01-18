@@ -231,6 +231,10 @@ body,html{
     left: 190px;
     cursor:url(img/yell_block.png)-10 -20,auto;
 }
+#header .logo a{
+    display: block;
+    width: 219px; height: 80px;
+}
 
 #header .gnb {
     width: 660px;
