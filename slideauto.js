@@ -43,7 +43,7 @@ $(document).ready(function () {
         $(".cirWrap>li").eq(list).addClass("on");
 
         $(".panel").stop().animate({ "margin-left": -wid * list }, function () {
-            $(".panel>li").eq(list).children('h2').stop().animate({ "opacity": "1", "top": "30%" }, function () {
+            $(".panel>li").eq(list).children('h2').stop().animate({ "opacity": "1", "top": "25%" }, function () {
                 $(".panel>li").eq(list).children("h3").stop().fadeIn();
             });
         });

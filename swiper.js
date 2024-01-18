@@ -32,7 +32,7 @@ function slider() {
         let $this = $(this);
         let swiper = undefined;
         let slideNum = $this.find('.swiper-slide').length //슬라이드 총 개수
-        let slideInx = 3; //현재 슬라이드 index
+        let slideInx = 2; //현재 슬라이드 index
 
         //디바이스 체크
         let oldWChk = window.innerWidth > 768 ? 'pc' : 'mo';

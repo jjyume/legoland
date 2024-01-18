@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        if (scroll > 4800) {
+        if (scroll > 4500) {
             $(".fixed").stop().animate({ "bottom": "480px" }, 300);
         } else {
             $(".fixed").stop().animate({ "bottom": "50px" }, 300);
