@@ -357,7 +357,7 @@ body,html{
     background-repeat: no-repeat; */
     position:absolute;
     top:110px;
-    right:193px;
+    right:243px;
 }
 
 #section .tab_menu{
@@ -900,7 +900,7 @@ color: rgb(105,105,105);
 }
 
 .material-symbols-outlined{
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: footer ;
     animation-iteration-count: infinite;
 }
@@ -915,5 +915,22 @@ color: rgb(105,105,105);
     }
     100% {
     transform: scale(1.0);
+    }
+}
+
+#section .top_tit .tit_img{
+    animation-duration: 4s;
+    animation-name: object ;
+    animation-iteration-count: infinite;
+}
+@keyframes object {
+    0% {
+    transform: translateX(0);
+    }
+    50% {
+    transform: translateX(-15px);
+    }
+    100% {
+    transform: translateX(0);
     }
 }

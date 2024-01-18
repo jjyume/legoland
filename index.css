@@ -323,7 +323,7 @@ body {
 
 #section .mainbanner {
     width: 100%;
-    height: 800px;
+    height: 853px;
     overflow: hidden;
     position: relative;
 }
@@ -335,24 +335,24 @@ body {
 #section .mainbanner .panel>li {
     float: left;
     width: 33.33333%;
-    height: 800px;
+    height: 853px;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 
 }
 
 #section .mainbanner .panel>li.jungle {
     background-image: url(images/main1.png);
+    background-position-y: 50px ;
 }
 
 #section .mainbanner .panel>li.teacher {
     background-image: url(images/KakaoTalk_Photo_2024-01-17-09-48-54.png);
-    background-size: contain;
 }
 
 #section .mainbanner .panel>li.animation {
     background-image: url(images/KakaoTalk_Image_2024-01-17-09-41-20.png);
+    background-position-y: 40px ;
 }
 
 #section .mainbanner .panel>li.jungle>h2 {
@@ -1002,7 +1002,7 @@ body {
     display: none;
 } */
 .material-symbols-outlined {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: footer;
     animation-iteration-count: infinite;
 }

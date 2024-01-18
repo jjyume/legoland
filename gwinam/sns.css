@@ -376,7 +376,7 @@ body,html{
     background-position: center;
     background-image: url(img/mini.png);
     position:absolute;
-    top:-20px;
+    top:-40px;
     right:203px;
     z-index: -1;
 }
@@ -958,5 +958,26 @@ color: rgb(105,105,105);
     }
     100% {
     transform: scale(1.0);
+    }
+}
+
+
+#section .top_tit .tit_img{
+    animation-duration: 3s;
+    animation-name: object ;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes object {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.05);
+    }
+    100% {
+    transform: scale(1);
     }
 }

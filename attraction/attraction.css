@@ -358,8 +358,8 @@ body,html{
     background-size: contain;
     background-repeat: no-repeat;
     position:absolute;
-    top:90px;
-    right:193px;
+    top:85px;
+    right:380px;
 }
 
 /*어트랙션 콘텐츠 시작*/
@@ -1725,8 +1725,16 @@ font-size: 13px;
 color: rgb(105,105,105);
 }
 
+
+
+
+
+
+
+
+
 .material-symbols-outlined{
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: footer ;
     animation-iteration-count: infinite;
 }
@@ -1741,5 +1749,23 @@ color: rgb(105,105,105);
     }
     100% {
     transform: scale(1.0);
+    }
+}
+
+
+#section .top_tit .tit_img{
+    animation-duration: 4s;
+    animation-name: object ;
+    animation-iteration-count: infinite;
+}
+@keyframes object {
+    0% {
+    transform: translateX(0);
+    }
+    50% {
+    transform: translateX(-15px);
+    }
+    100% {
+    transform: translateX(0);
     }
 }

@@ -779,3 +779,23 @@ color: rgb(105,105,105);
     background: #ce1e1e;
     filter: blur(7px);
 }
+
+
+#section .top_tit .tit_img{
+    animation-duration: 3s;
+    animation-name: object ;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes object {
+    0% {
+    transform: rotate(-10deg);
+    }
+    50% {
+    transform: rotate(13deg);
+    }
+    100% {
+    transform: rotate(-10deg);
+    }
+}
