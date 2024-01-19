@@ -342,8 +342,10 @@ body {
 }
 
 #section .mainbanner .panel>li.jungle {
+    margin-top: -140px;
     background-image: url(images/main1.png);
     background-position-y: 50px ;
+    height: 993px;
 }
 
 #section .mainbanner .panel>li.teacher {
@@ -367,10 +369,12 @@ body {
 }
 
 #section .mainbanner .panel>li.animation>h2 {
+    text-align: center;
     position: absolute;
-    top: 240px;
-    left: 50%;
+    top: 300px;
+    left: 60%;
     margin-left: -407.69px;
+    line-height: 150px;
     font-size: 80px;
     color: rgb(23, 23, 23);
     font-family: 'EsaManru300';
