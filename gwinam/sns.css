@@ -300,7 +300,7 @@ a{text-decoration: none; color: #000000;}
 
 body,html{
     display: block;
-    cursor:url(img/normal_block.png)-10 -20,auto;
+    cursor:url(img/head_normal_block.png)-10 -20,auto;
 }
 
 #header .gnb>li a, #header .gnb>li .sub>li>a{
